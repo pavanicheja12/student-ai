@@ -1,0 +1,58 @@
+.student-growth { display: grid; gap: 14px; min-width: 0; }
+.growth-heading { padding: 20px 22px; border: 1px solid #e8e5f5; border-radius: 11px; background: linear-gradient(120deg,#fff,#f8f6ff); }
+.growth-heading > span { color: #8171d8; font-size: 8px; font-weight: 800; letter-spacing: 1px; }
+.growth-heading h1 { margin: 5px 0; color: #29283f; font: 800 clamp(21px,3vw,27px) Manrope,sans-serif; }
+.growth-heading p { color: #89889e; font-size: 10px; line-height: 1.7; }
+.growth-form,.growth-panel { display: grid; gap: 12px; padding: 17px; border: 1px solid #ececf4; border-radius: 10px; background: white; }
+.growth-form h2,.growth-panel h2 { margin: 0; color: #302f48; font: 700 13px Manrope,sans-serif; }
+.growth-form-grid { display: grid; grid-template-columns: repeat(2,minmax(0,1fr)); gap: 11px; }
+.growth-input { display: grid; gap: 6px; min-width: 0; color: #89889e; font-size: 9px; }
+.growth-input input,.growth-input select { width: 100%; min-height: 38px; padding: 8px 10px; border: 1px solid #e8e7f0; border-radius: 7px; color: #55536b; background: white; font: inherit; font-size: 10px; }
+.growth-form .primary-button { justify-self: start; display: inline-flex; align-items: center; gap: 7px; }
+.growth-panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 9px; }
+.growth-subtle-button,.growth-inline-form button,.growth-share-form button { display: inline-flex; align-items: center; justify-content: center; gap: 6px; padding: 8px 10px; border: 1px solid #e5e2f2; border-radius: 7px; color: #6559bc; background: #f8f7ff; font-size: 9px; font-weight: 700; }
+.growth-list { display: grid; gap: 10px; }
+.growth-list article { display: grid; gap: 9px; padding: 13px; border: 1px solid #f0eff5; border-radius: 8px; }
+.growth-list article > div { display: grid; gap: 5px; }
+.growth-list article span,.growth-list article small,.growth-timeline span,.growth-timeline small { color: #9998ad; font-size: 8px; text-transform: capitalize; }
+.growth-list article strong { color: #38364f; font-size: 11px; }
+.growth-list article p { color: #89889e; font-size: 9px; line-height: 1.6; }
+.growth-list article a { color: #665bc4; font-size: 9px; }
+.growth-inline-form { display: flex; flex-wrap: wrap; gap: 7px; }
+.growth-inline-form input { flex: 1 1 130px; min-width: 0; min-height: 34px; padding: 7px 9px; border: 1px solid #e8e7f0; border-radius: 6px; color: #55536b; font-size: 9px; }
+.growth-check-row { display: flex; align-items: center; gap: 8px; padding: 6px 2px; color: #65637a; font-size: 9px; }
+.growth-check-row input { accent-color: #6d5bd1; }
+.growth-timeline { display: grid; gap: 0; }
+.growth-timeline article { display: grid; grid-template-columns: 15px 1fr; gap: 10px; padding: 0 0 17px; }
+.growth-timeline article > i { width: 9px; height: 9px; margin: 4px auto 0; border: 2px solid #8171d8; border-radius: 50%; background: #fff; }
+.growth-timeline article > div { display: grid; gap: 4px; padding-bottom: 11px; border-bottom: 1px solid #f0eff5; }
+.growth-timeline strong { color: #38364f; font-size: 11px; }
+.growth-timeline p { color: #89889e; font-size: 9px; }
+.growth-empty { padding: 19px; color: #9998ad; font-size: 9px; text-align: center; }
+.growth-notice,.growth-error,.growth-disclaimer { padding: 10px 12px; border-radius: 7px; color: #338468; background: #effaf5; font-size: 9px; line-height: 1.6; }
+.growth-error { color: #b94c62; background: #fff3f5; }
+.growth-disclaimer { display: block; color: #89889e; background: #f8f7fc; }
+.growth-alert { display: flex; gap: 10px; padding: 12px; border: 1px solid #f1e2c2; border-radius: 8px; color: #b17d25; background: #fffaf0; }
+.growth-alert div { display: grid; gap: 5px; }
+.growth-alert strong { color: #5d4b2e; font-size: 10px; }
+.growth-alert p,.growth-alert small { color: #81745f; font-size: 9px; line-height: 1.6; }
+.growth-messages { display: grid; gap: 8px; max-height: 440px; overflow: auto; }
+.growth-messages article { max-width: 88%; padding: 11px; border-radius: 9px; background: #f6f5fa; }
+.growth-messages article.from-student { justify-self: end; color: white; background: #6c5dd3; }
+.growth-messages article strong,.growth-messages article small { display: block; font-size: 8px; }
+.growth-messages article p { margin: 5px 0; white-space: pre-wrap; font-size: 10px; line-height: 1.6; }
+.growth-messages article small { opacity: .75; }
+.growth-chat-form { display: flex; align-items: flex-end; gap: 9px; }
+.growth-chat-form textarea { flex: 1; min-height: 55px; padding: 10px; border: 1px solid #e8e7f0; border-radius: 7px; resize: vertical; color: #55536b; font: inherit; font-size: 10px; }
+.growth-chat-form .primary-button { display: inline-flex; align-items: center; gap: 6px; }
+.growth-share-form { display: flex; align-items: center; flex-wrap: wrap; gap: 8px; padding-top: 10px; border-top: 1px solid #f0eff5; color: #8171d8; }
+.growth-share-form label { display: flex; align-items: center; flex-wrap: wrap; gap: 7px; color: #89889e; font-size: 9px; }
+.growth-share-form select { min-height: 32px; max-width: 240px; padding: 6px 8px; border: 1px solid #e8e7f0; border-radius: 6px; color: #55536b; background: white; font-size: 9px; }
+.growth-share-note { color: #338468; font-size: 9px; }
+.growth-report-metrics { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 9px; }
+.growth-report-metrics article { display: grid; gap: 7px; padding: 13px; border: 1px solid #ececf4; border-radius: 8px; background: white; }
+.growth-report-metrics span { color: #89889e; font-size: 8px; }
+.growth-report-metrics strong { color: #302f48; font: 800 20px Manrope,sans-serif; }
+.growth-report .primary-button { display: inline-flex; justify-self: start; align-items: center; gap: 7px; }
+@media(max-width:600px) { .growth-form-grid,.growth-report-metrics { grid-template-columns: repeat(2,minmax(0,1fr)); } .growth-chat-form { align-items: stretch; flex-direction: column; } .growth-messages article { max-width: 100%; } }
+@media print { body * { visibility: hidden; } .student-growth,.student-growth * { visibility: visible; } .student-growth { position: absolute; left: 0; top: 0; width: 100%; padding: 12px; background: white; } .no-print { display: none !important; } }

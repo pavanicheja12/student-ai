@@ -1,0 +1,7 @@
+modules = ["nodejs-20"]
+run = "npm run dev -- --host 0.0.0.0"
+
+[deployment]
+deploymentTarget = "autoscale"
+build = ["npm", "run", "build"]
+run = ["npm", "run", "start"]

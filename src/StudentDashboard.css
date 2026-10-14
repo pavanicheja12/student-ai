@@ -1,0 +1,82 @@
+.student-portal { min-height: 100vh; background: #f6f7fc; }
+.student-portal-header { min-height: 72px; display: flex; justify-content: space-between; align-items: center; gap: 18px; padding: 12px clamp(16px, 5vw, 54px); border-bottom: 1px solid #ececf4; background: #fff; }
+.student-portal-brand { display: flex; align-items: center; gap: 11px; }
+.student-portal-brand strong { display: block; color: #29283f; font: 800 17px Manrope; }
+.student-portal-brand span { display: block; margin-top: 4px; color: #9998b8; font-size: 8px; letter-spacing: 1.1px; }
+.student-account { display: flex; align-items: center; gap: 15px; color: #77758c; font-size: 11px; }
+.student-signout { display: flex; align-items: center; gap: 7px; padding: 9px 12px; border: 1px solid #e8e7f0; border-radius: 8px; color: #615f77; background: #fff; font-size: 10px; font-weight: 700; }
+.student-signout:disabled { opacity: .6; }
+.student-portal-content { width: min(1200px, 100%); margin: 0 auto; padding: 27px clamp(14px, 3vw, 34px) 20px; }
+.student-portal-layout { display: grid; grid-template-columns: 218px minmax(0, 1fr); gap: 26px; width: min(1440px, 100%); margin: 0 auto; padding: 24px clamp(14px, 3vw, 34px); }
+.student-portal-nav { position: sticky; top: 16px; align-self: start; display: grid; gap: 5px; padding: 15px 11px; border: 1px solid #ececf4; border-radius: 12px; background: #fff; }
+.student-nav-title { padding: 7px 9px 10px; color: #9998ad; font-size: 8px; font-weight: 700; letter-spacing: 1.1px; }
+.student-portal-nav > button { display: flex; align-items: center; gap: 9px; width: 100%; padding: 10px 9px; border: 0; border-radius: 8px; color: #77758c; background: transparent; font-size: 10px; text-align: left; }
+.student-portal-nav > button.active { color: #6d5bd1; background: #f0edff; font-weight: 700; }
+.student-portal-nav > button:hover { background: #f8f7ff; }
+.student-nav-foot { display: flex; align-items: center; gap: 8px; margin: 11px 3px 0; padding: 12px 6px 2px; border-top: 1px solid #f0eff5; color: #3b9876; font-size: 9px; }
+.student-portal-main { min-width: 0; }
+.student-module-heading { margin-bottom: 18px; padding: 21px 22px; border: 1px solid #e8e5f5; border-radius: 12px; background: linear-gradient(120deg, #fff, #f8f6ff); }
+.student-module-heading h1 { margin: 0 0 8px; color: #29283f; font: 800 clamp(21px, 3vw, 27px) Manrope; letter-spacing: -.6px; }
+.student-module-heading p { margin: 0; color: #89889e; font-size: 11px; line-height: 1.7; }
+.student-profile-card, .student-request-form, .student-ai-card { margin: 0 0 15px; padding: 19px; border: 1px solid #ececf4; border-radius: 11px; background: #fff; }
+.student-profile-card h2, .student-request-form h2 { margin: 0 0 8px; color: #302f48; font: 700 14px Manrope; }
+.student-profile-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 0 18px; }
+.student-profile-field { display: grid; gap: 6px; padding: 13px 0; border-bottom: 1px solid #f1f0f6; }
+.student-profile-field > span, .student-form-grid label > span { color: #9998ad; font-size: 9px; }
+.student-profile-field > strong { color: #55536b; font-size: 11px; overflow-wrap: anywhere; }
+.student-request-form > p, .student-ai-card p { margin: 0 0 15px; color: #89889e; font-size: 10px; line-height: 1.7; }
+.student-form-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin-bottom: 14px; }
+.student-form-grid label { display: grid; gap: 7px; }
+.student-form-grid label.wide { grid-column: 1 / -1; }
+.student-form-grid input, .student-form-grid select, .student-form-grid textarea { width: 100%; min-height: 39px; padding: 9px 10px; border: 1px solid #e8e7f0; border-radius: 7px; color: #55536b; background: #fff; font-size: 10px; }
+.student-form-grid textarea { min-height: 92px; resize: vertical; }
+.student-ai-card > div:first-child strong { color: #302f48; font: 700 13px Manrope; }
+.student-notice { margin-bottom: 14px; padding: 10px 12px; border: 1px solid #d9f0e6; border-radius: 8px; color: #2e8d6b; background: #effaf5; font-size: 10px; }
+.student-privacy-banner { display: flex; align-items: center; gap: 9px; margin-bottom: 25px; padding: 11px 13px; border: 1px solid #d9f0e6; border-radius: 8px; color: #2e8d6b; background: #effaf5; font-size: 10px; line-height: 1.5; }
+.student-welcome { margin-bottom: 24px; padding: 25px; border: 1px solid #e8e5f5; border-radius: 13px; background: linear-gradient(120deg, #fff, #f8f6ff); }
+.student-welcome h1 { margin: 0 0 8px; color: #29283f; font: 800 clamp(22px, 4vw, 29px) Manrope; letter-spacing: -.7px; }
+.student-welcome > p { color: #89889e; font-size: 12px; line-height: 1.7; }
+.student-identity { display: flex; flex-wrap: wrap; gap: 15px; margin-top: 16px; color: #6c6887; font-size: 10px; }
+.student-identity span { display: flex; align-items: center; gap: 6px; }
+.student-summary-grid { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 13px; margin-bottom: 17px; }
+.student-summary-card { min-width: 0; display: flex; flex-direction: column; align-items: flex-start; gap: 9px; padding: 17px; border: 1px solid #ececf4; border-radius: 11px; background: #fff; }
+.student-summary-card > div { display: grid; place-items: center; width: 34px; height: 34px; border-radius: 9px; color: #7564df; background: #f0edff; }
+.student-summary-card > span { color: #89889e; font-size: 10px; }
+.student-summary-card > strong { color: #29283f; font: 800 23px Manrope; overflow-wrap: anywhere; }
+.student-summary-card > small { color: #a09eb1; font-size: 9px; }
+.student-record-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 15px; }
+.student-record-panel { min-width: 0; padding: 18px; border: 1px solid #ececf4; border-radius: 11px; background: #fff; }
+.student-record-heading { display: flex; justify-content: space-between; align-items: flex-start; gap: 12px; margin-bottom: 13px; }
+.student-record-heading h2 { margin: 0 0 5px; color: #302f48; font: 700 13px Manrope; }
+.student-record-heading p { color: #9998ad; font-size: 9px; line-height: 1.6; }
+.student-record-heading > span { flex-shrink: 0; color: #77758c; font-size: 9px; }
+.student-record-list { display: grid; gap: 9px; max-height: 360px; overflow-y: auto; }
+.student-record { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 10px 14px; padding: 12px; border: 1px solid #f0eff5; border-radius: 8px; background: #fdfdff; }
+.student-record-field { min-width: 0; display: grid; gap: 4px; }
+.student-record-field > span { color: #a09eb1; font-size: 8px; text-transform: uppercase; letter-spacing: .4px; }
+.student-record-field > strong { color: #55536b; font-size: 10px; font-weight: 600; overflow-wrap: anywhere; }
+.student-empty { padding: 23px 10px; color: #9998ad; font-size: 10px; line-height: 1.7; text-align: center; }
+.student-data-state { display: grid; justify-items: center; gap: 11px; margin: 35px auto; padding: 34px; border: 1px solid #ececf4; border-radius: 12px; color: #7968e9; background: #fff; text-align: center; }
+.student-data-state strong { color: #37364f; font: 700 14px Manrope; }
+.student-data-state > span { max-width: 560px; color: #89889e; font-size: 10px; line-height: 1.7; }
+.student-data-error { color: #d95f76; }
+.student-portal-footer { padding: 25px 0 5px; color: #aaa9ba; font-size: 9px; text-align: center; }
+.access-denied > span[role="alert"] { color: #b94c62; }
+@media (max-width: 760px) {
+  .student-portal-layout { grid-template-columns: 1fr; gap: 15px; }
+  .student-portal-nav { position: static; grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .student-nav-title, .student-nav-foot { grid-column: 1 / -1; }
+  .student-summary-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .student-record-grid { grid-template-columns: 1fr; }
+}
+@media (max-width: 480px) {
+  .student-portal-header { align-items: flex-start; flex-direction: column; }
+  .student-account { width: 100%; justify-content: space-between; }
+  .student-welcome { padding: 19px; }
+  .student-profile-grid, .student-form-grid { grid-template-columns: 1fr; }
+  .student-form-grid label.wide { grid-column: auto; }
+  .student-module-heading { padding: 18px; }
+  .student-summary-card { padding: 13px; }
+  .student-summary-card > strong { font-size: 20px; }
+  .student-record-panel { padding: 14px; }
+}

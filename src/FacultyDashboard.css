@@ -1,0 +1,41 @@
+.faculty-app { min-height: 100vh; background: #f6f7fc; color: #514f66; }
+.faculty-header { min-height: 68px; display: flex; justify-content: space-between; align-items: center; gap: 16px; padding: 10px clamp(16px, 4vw, 42px); border-bottom: 1px solid #ececf4; background: #fff; }
+.faculty-brand, .faculty-brand-mark, .faculty-account, .faculty-signout { display: flex; align-items: center; }
+.faculty-brand { gap: 10px; }
+.faculty-brand-mark { width: 34px; height: 34px; justify-content: center; border-radius: 9px; color: #6c5dd3; background: #f0edff; }
+.faculty-brand strong, .faculty-brand span { display: block; }
+.faculty-brand strong { color: #29283f; font: 800 16px Manrope, sans-serif; }
+.faculty-brand span { margin-top: 3px; color: #9998ad; font-size: 8px; letter-spacing: 1px; }
+.faculty-account { gap: 15px; font-size: 11px; }
+.faculty-signout { gap: 7px; padding: 8px 11px; border: 1px solid #e8e7f0; border-radius: 7px; color: #615f77; background: #fff; }
+.faculty-layout { display: grid; grid-template-columns: 210px minmax(0, 1fr); gap: 22px; width: min(1320px, 100%); margin: 0 auto; padding: 24px clamp(14px, 3vw, 30px); }
+.faculty-sidebar { display: grid; align-content: start; gap: 6px; padding: 14px 10px; border: 1px solid #ececf4; border-radius: 11px; background: white; }
+.faculty-nav-title { padding: 7px 9px; color: #9998ad; font-size: 8px; letter-spacing: 1px; }
+.faculty-sidebar button { padding: 10px; border: 0; border-radius: 7px; color: #77758c; background: transparent; text-align: left; font-size: 10px; }
+.faculty-sidebar button.active { color: #6d5bd1; background: #f0edff; font-weight: 700; }
+.faculty-main { min-width: 0; }
+.faculty-heading { margin-bottom: 16px; padding: 20px; border: 1px solid #e8e5f5; border-radius: 11px; background: linear-gradient(120deg, white, #f8f6ff); }
+.faculty-heading > span { color: #8171d8; font-size: 8px; font-weight: 800; letter-spacing: 1px; }
+.faculty-heading h1 { margin: 5px 0; color: #29283f; font: 800 25px Manrope, sans-serif; }
+.faculty-heading p { color: #89889e; font-size: 10px; line-height: 1.6; }
+.faculty-toolbar { display: grid; grid-template-columns: minmax(160px, 1fr) minmax(200px, 1fr); gap: 12px; margin-bottom: 15px; }
+.faculty-toolbar label { display: grid; gap: 6px; color: #89889e; font-size: 9px; }
+.faculty-toolbar input, .faculty-toolbar select { width: 100%; min-height: 38px; padding: 8px 10px; border: 1px solid #e8e7f0; border-radius: 7px; color: #55536b; background: white; font-size: 10px; }
+.faculty-metrics { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 11px; margin-bottom: 14px; }
+.faculty-metrics article { display: grid; gap: 8px; padding: 15px; border: 1px solid #ececf4; border-radius: 9px; background: white; }
+.faculty-metrics svg { color: #7564df; }
+.faculty-metrics span { color: #89889e; font-size: 9px; }
+.faculty-metrics strong { color: #29283f; font: 800 20px Manrope, sans-serif; }
+.faculty-panel { margin-bottom: 14px; padding: 17px; border: 1px solid #ececf4; border-radius: 10px; background: white; }
+.faculty-panel h2 { margin: 0 0 12px; color: #302f48; font: 700 13px Manrope, sans-serif; }
+.faculty-record-list { display: grid; gap: 8px; }
+.faculty-record { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 9px 14px; padding: 11px; border: 1px solid #f0eff5; border-radius: 7px; overflow-wrap: anywhere; }
+.faculty-record div { display: grid; gap: 4px; }
+.faculty-record span, .faculty-record div > span { color: #9998ad; font-size: 8px; text-transform: capitalize; }
+.faculty-record strong { color: #55536b; font-size: 10px; font-weight: 600; }
+.faculty-empty, .faculty-state { display: grid; justify-items: center; gap: 10px; padding: 30px 15px; border: 1px solid #ececf4; border-radius: 10px; color: #8e8ca4; background: white; text-align: center; font-size: 10px; }
+.faculty-state strong { color: #37364f; font-size: 13px; }
+.faculty-error { color: #b94c62; }
+.faculty-state button { padding: 8px 12px; border: 1px solid #dedbef; border-radius: 7px; color: #6256bc; background: #f6f4ff; }
+@media (max-width: 720px) { .faculty-layout { grid-template-columns: 1fr; } .faculty-sidebar { grid-template-columns: repeat(2, minmax(0, 1fr)); } .faculty-nav-title { grid-column: 1 / -1; } }
+@media (max-width: 480px) { .faculty-header { align-items: flex-start; flex-direction: column; } .faculty-account { width: 100%; justify-content: space-between; } .faculty-toolbar, .faculty-metrics, .faculty-record { grid-template-columns: 1fr; } }
